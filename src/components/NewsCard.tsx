@@ -7,7 +7,7 @@ interface NewsCardProps {
 }
 
 const NewsCard = ({ article }: NewsCardProps) => {
-  const articleId = encodeURIComponent(article.title);
+  const articleId = article.id;
 
   return (
     <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">

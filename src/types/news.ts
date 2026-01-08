@@ -1,14 +1,20 @@
+export interface NewsSource {
+  id: string;
+  name: string;
+  url: string;
+  country: string;
+}
+
 export interface Article {
+  id: string;
   title: string;
   description: string;
   content: string;
   url: string;
   image: string;
   publishedAt: string;
-  source: {
-    name: string;
-    url: string;
-  };
+  lang: string;
+  source: NewsSource;
 }
 
 export interface NewsResponse {

@@ -24,6 +24,7 @@ const HomePage = () => {
       {articles.map((article: Article, index: number) => (
         <NewsCard key={`${article.url}-${index}`} article={article} />
       ))}
+      
     </div>
   );
 };
