@@ -1,14 +1,10 @@
 import { Outlet } from 'react-router-dom';
+import Header from './Header';
 
 const Layout = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold text-blue-600">World News</div>
-          <nav>Пошук та Категорії будуть тут</nav>
-        </div>
-      </header>
+      <Header />
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <Outlet /> 
