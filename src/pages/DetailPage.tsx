@@ -7,7 +7,9 @@ const DetailPage = () => {
   
   const { data, isLoading, isError } = useNews();
 
-  const article = data?.articles.find((item) => item.id === id);
+  const article = data?.pages
+  .flatMap((page) => page.articles)
+  .find((item) => item.id === id);
 
   if (isLoading) {
     return (
