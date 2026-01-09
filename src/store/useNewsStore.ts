@@ -1,6 +1,6 @@
 import { create } from 'zustand'
+import type { Category } from '../types/news';
 
-export type Category = 'general' | 'world' | 'nation' | 'business' | 'technology' | 'entertainment' | 'sports' | 'science' | 'health';
 
 interface NewsState {
   category: Category;
